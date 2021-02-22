@@ -1,0 +1,1 @@
+Student's age: <?php echo $age ?>

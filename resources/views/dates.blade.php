@@ -1,0 +1,1 @@
+Student's date of birth: <?php echo $date ?>

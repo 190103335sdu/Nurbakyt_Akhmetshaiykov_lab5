@@ -17,6 +17,13 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/welcome23/{name?}', function () {
-    return "Maksat";
-});
+use App\Http\Controllers\StudentController;
+
+//shows name
+Route::get('/name/{id}', [StudentController::class, 'display_name']);
+
+//shows date of birth
+Route::get('/date/{id}', [StudentController::class, 'display_date']);
+
+//shows age
+Route::get('/age/{id}', [StudentController::class, 'display_age']);
